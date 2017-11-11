@@ -1,0 +1,301 @@
+SSE : Find movie times for Landmark Theatres.
+SSE : What are the movie times for Amco Entertainment
+SSE : what films are showing at Bow Tie Cinemas
+SSE : Show me the movies close by
+SSE : I want to see The Da Vinci Code
+SSE : Show me movie times at the Pacific Theatres for The Hot Rock
+SSE : Tell me the closest movie house playing Black Rage
+SSE : Is My Own True Love playing
+SSE : What are the movie schedules for Kerasotes Theatres
+SSE : Check the movie timings for Cracked Nuts at Southern Theatres.
+SSE : Is it possible to see Riddick at Consolidated Theatres
+SSE : What films are playing at the closest movie house
+SSE : Is The Wash playing at the cinema in one minute
+SSE : Give me the movie schedule for The Loners at MJR Theatres.
+SSE : Show the times for animated movies in the nearest movie house
+SSE : Find the movie schedule close by
+SSE : What are them movie times
+SSE : Find the schedule for A Kiss Before Dying.
+SSE : Find the schedule for animated movies nearby
+SSE : When is The Grip of Iron playing
+SSE : Give me Pacific Theatres movie schedules
+SSE : where is the nearest movie theatre showing movies
+SSE : What is the 7 A.M. movie schedules at Amco Entertainment
+SSE : Find the movie times at National Amusements.
+SSE : I need the films names that are playing in the closest movie house
+SSE : What AMC Theaters is The Red Dance playing at?
+SSE : Is The Strange Case of the End of Civilization as We Know It playing at the movie theatre
+SSE : Is AMC Theaters showing Crime on the Hill?
+SSE : Is Worms Will Turn running at any movie hall?
+SSE : what day does the movie Star of the Circus play at ten PM
+SSE : Find the schedule for Metallica Through the Never.
+SSE : I need movie times at United Paramount Theatres
+SSE : Is Mark of the Cop showing in the closest movie theatre
+SSE : Check which cinema currently runs When the Last Sword is Drawn.
+SSE : When doesFun 2shh: Dudes in the 10th Century start at the closest movie theatre.
+SSE : I would like to see a movie at the nearest movie house.
+SSE : Find the movie schedule.
+SSE : when is Interview: The Documentary playing in Loews Cineplex
+SSE : I want to see Death Carries a Cane at the closest movie theatre, what times will it be showing?
+SSE : I need movie schedules
+SSE : Find the movies at the nearest cinema.
+SSE : Is The Country Doctor on the schedule at any theater near me?
+SSE : where is No Sleep til Shanghai showing in three hours from now
+SSE : Are any films play at the Santikos Theatres
+SSE : What is showing at twelve P.M. in the closest movie house
+SSE : Find the movie times at Bow Tie Cinemas.
+SSE : Find the closest movie theatre with animated movies in 21 hours
+SSE : Is Winged Victory showing anywhere in one minute?
+SSE : show me the schedule of movie Thirty Two Short Films About Glenn Gould in 14 minutes
+SSE : When is Painless Love playing in the Neighborhood Cinema Group
+SSE : Give me the movie schedule for Cineplex Odeon Corporation
+SSE : When is Brick showing
+SSE : Where will The Blonde from Peking be playing
+SSE : Is there any way to see Tailspin Tommy in the Great Air Mystery
+SSE : Find the schedule at Southern Theatres.
+SSE : What movies are playing at Loews Cineplex?
+SSE : I want to find out when Midnight Club is playing
+SSE : Can I get the movie schedule for Douglas Theatre Company
+SSE : what movies are playing at Warren Theatres
+SSE : Find the movie schedules for Cobb Theatres.
+SSE : Will you show me the movies playing around here?
+SSE : Circle of Iron in the closet cinema
+SSE : Find animated movies in the neighborhood.
+SSE : Is Storm Warning playing
+SSE : Are there any animated movies playing at the closest cinema?
+SSE : What is the movie schedule for Marcus Corporation
+SSE : What movies are playing at the closest movie theatre
+SSE : when is The Statue showing 
+SSE : Is The Love Guru playing 
+SSE : when is Letters from a Porcupine showing at Alamo Drafthouse Cinema
+SSE : What times will Escape from Hong Kong be showing?
+SSE : I want to see The Happy Thieves at Marcus Corporation, can you show me movie times
+SSE : Are there any movies playing at 5 am at North American Cinemas?
+SSE : Find the schedule for Stacey.
+SSE : When is The Tale of the Fox playing near me
+SSE : What films are showing at Magic Johnson Theatres.
+SSE : Can I get the movie schedule for ArcLight Hollywood
+SSE : Give me movie times
+SSE : What are the animated movies playing nearby
+SSE : What movies are at Caribbean Cinemas
+SSE : Is Sheikh Chilli playing
+SSE : What is the nearest movie theatre showing Ocean’s 13?
+SSE : Find the schedule for The Voice in the Fog at night at the closest movie house.
+SSE : Check movie schedules and find which animated movies are being aired in the neighborhood
+SSE : where can i watch animated movies around here
+SSE : Show me the movie times 
+SSE : Is Millions in the Air playing at the cinema
+SSE : Is Love, Marilyn playing
+SSE : What times is 7 Faces of Dr. Lao showing at United Paramount Theatres
+SSE :  Give me the list of films showing at night at Great Escape Theatres.
+SSE : When is Balkan Rhapsodies: 78 Measures of War playing at Malco Theatres?
+SSE : show me the schedule of The Loves of Letty in the closest cinema
+SSE : Can I see The Cup Winner at the closest movie house
+SSE : when can I see Dead Snow
+SSE : Where can i see Love Me Tonight
+SSE : show me the list of films in Cobb Theatres
+SSE : I want to see King of the River in the nearest movie theatre
+SSE : At what times will animated movies be showing nearby?
+SSE : show me the schedule of movie Shadow of a Woman
+SSE : What are the movie schedules in the neighborhood
+SSE : show me the movie times in the neighbourhood
+SSE : I need to know when Sensation in Morgan’s Creek is playing
+SSE : Give me the schedule for animated movies at the nearest cinema
+SSE : What movies are showing close by
+SSE : Is it possible to see Seed of Chucky
+SSE : When is The Creators showing
+SSE : Is The Kiss playing
+SSE : Find the movie times.
+SSE : Can I see the movie times for the Great Escape Theatres
+SSE : are there any movies playing around here
+SSE : List all the movies playing in the area now.
+SSE : Find the schedule for Precautions Against Fanatics at Star Theatres.
+SSE : I want to see Idols of Clay at my movie house.
+SSE : Is Prophecy playing at Malco Theatres
+SSE : Find the schedule for Evening Clothes in 1 second.
+SSE : Find the schedule for The Solitude of Prime Numbers at the nearest cinema in 1 hour .
+SSE : When can I see I Am Sorry at my movie house
+SSE : Show me when and where I can see Song of Summer
+SSE : show me the movie schedule at the closest cinema
+SSE : Can I get a movie schedule
+SSE : Find the schedule for animated movies in the neighbourhood.
+SSE : I want to see Sympathy for the Devil
+SSE : show the schedule of Unborn but Forgotten
+SSE : Is Unsettled Land playing at the movie theatre
+SSE : When is The Devil with Hitler playing in Bow Tie Cinemas
+SSE : Tell me what movies are showing at seven am at the closest movie house.
+SSE : Find movie schedules nearby.
+SSE : Find the schedule for Death Valley Manhunt.
+SSE : Find animated movies showing close by.
+SSE : Is A Man, a Woman, and a Bank showing in the nearest Neighborhood Cinema Group
+SSE : Find the list of movies showing close by
+SSE : Are there any films around here
+SSE : Is Rented Lips playing at the nearest cinema
+SSE : Find the schedule for Heart Beats.
+SSE : Find the movies at Malco Theatres.
+SSE : Is A Closed Book playing at United Paramount Theatres
+SSE : what are the movie times for IMAX Corporation
+SSE : What animated movies are playing at the closest cinema?
+SSE : When can I see Ghost World
+SSE : What movie theatre is palying The Hurricane five hours from now
+SSE : Find the movie schedule at B&B Theatres.
+SSE : Show me movie schedules
+SSE : Is American Dreamer playing at Pacific Theatres
+SSE : I want to see Vanishing of the Bees at a movie house.
+SSE : Give me the list of animated movies playing at the closest movie house
+SSE : What are the timings for Starship Troopers 2?
+SSE : When will So Happy Together begin playing?
+SSE :  is it possible to see Corn at eleven A.M. at Loews Cineplex Entertainment
+SSE : Is Short of Love playing 
+SSE : When is For One Night playing at Loews Cineplex Entertainment?
+
+SSE : Is The Little Irish Girl playing
+SSE : What film is playing nearby
+SSE : Can I see Love in the Time of Cholera in the nearest movie house
+SSE : What are the movie schedules in the neighbourhood
+SSE : what's the movie schedule at National Amusements
+SSE : I'd like to go to Douglas Theatre Company to see In Beaver Valley, what times will this be playing?
+SSE : what films are showing at United Paramount Theatres
+SSE : show me the movie times in Dipson Theatres
+SSE : Show me movie schedule at Cobb Theatres
+SSE : What animated movies are showing nearby
+SSE : Shoe the movie showings for the closest cinema showing international movies
+SSE : What's the movie schedule at sunrise for ArcLight Hollywood
+SSE : I need the movie Kids in Love at the movie house
+SSE : Is The Butcher Boy playing anywhere at supper time?
+SSE : Can I see An Innocent Affair at the nearest movie house.
+SSE : Show me the movie times for animated movies that are in theaters close by
+SSE : Find the movie schedule for animated movies in the neighborhood.
+SSE : When and where can I see A Film with Me in It
+SSE : I need a list of places in the area where I can see animated movies in six minutes 
+SSE : Can I see Standing on the Edge of the Noise in the nearest cinema
+SSE : I want to see Michel Strogoff
+SSE : I want to see The Devil Diamond at a movie theatre.
+SSE : Is Chronicle of My Mother showing at the nearest cinema in 1 minute and 8 seconds.
+SSE : Find the schedule for Salt of the Black Earth at the closest movie house.
+SSE : What are the movie times at Alamo Drafthouse Cinema
+SSE : I need the movie schedules for Century Theatres
+SSE : I need movie times in the area for any type of movies
+SSE : Find the films at ArcLight Hollywood.
+SSE : Show me the new showings for animated movies in the neighborhood
+SSE : what theater is showing Trouble in Paradise at 00:45 am
+SSE : Give me the movie schedules at Plitt Theatres
+SSE : What are the movie times in the neighbourhood
+SSE : Show me animated movies that are playig at Great Escape Theatres
+SSE : Is there a showing of A Matter of Degrees at Harkins Theatres
+SSE : i want to see some movies in a B&B Theatres
+SSE : What movies are showing at Plitt Theatres.
+SSE : I would like to see The Heart of a Siren in my movie house
+SSE : Any showings for animated movies at Santikos Theatres.
+SSE : Find the movie schedule at IMAX Corporation.
+SSE : I need a list for Star Theatres of animated movies
+SSE : Can i get the times for afternoon showings in the nearest cinema for In the Secret Service
+SSE : When is Robotix playing?
+SSE : Find me animated movies at Amco Entertainment tomorrow
+SSE : what movies are playing nearby
+SSE : Is Fast and Loose playing
+SSE : Find the movie schedule for B&B Theatres.
+SSE : what are the movie times for animated movies close by
+SSE : SHow me the nearest movie house showing Moron 5 and the Crying Lady
+SSE : Give me the list of animated movies showing tonight at United Paramount Theatres
+SSE : Show me the movie schedule for Whore II.
+SSE : What films are playing in the neighborhood
+SSE : I want to see Train
+SSE : Is Fighting With Buffalo Bill playing at the closest movie house
+SSE : Can I see Central Airport at the closest movie theatre
+SSE : List the movie schedule for Regal Entertainment Group theater.
+SSE : Is Agents of Secret Stuff playing at North American Cinemas
+SSE : What are the 8 P.M. movie schedules
+SSE : I want to see an animated movie in the neighbourhood
+SSE : Recite the movie schedule.
+SSE : Can I see William Comes to Town at KB Theatres
+SSE : show the movie times
+SSE : Find the schedule for Success.
+SSE : Show me the movies at the Megaplex Theatres.
+SSE : I want to see the movie schedule for North American Cinemas
+SSE : Is the films 19 hours from now playing at Landmark Theatres
+SSE : give me the movie times
+SSE : Give me the showing of animated movies at Speakeasy Theaters
+SSE : What is the schedule at the closest movie theatre?
+SSE : Find all the films at the closestcinema during meal time.
+SSE : Is The Mystical Adventures of Billy Owens playing at the closest movie house
+SSE : Which movies are currently playing at Speakeasy Theaters
+SSE : show the movies at the nearest movie house
+SSE : Can I get the movie schedule
+SSE : Tell me the movie times for animated movies in the neighborhood.
+SSE : Tell me what movies are at AMC Theatres.
+SSE : Find me the movie schedule for Great Escape Theatres
+SSE : Gimme movie times.
+SSE : What is the movie schedule at the IMAX Corporation three minutes from now
+SSE : What are the movie times for films close by
+SSE : where's the nearest movie house playing No Trains No Planes
+SSE : I want to see Teeny Little Super Guy at Malco Theatres
+SSE : Give me the movie schedule for animated movies in the neighbourhood
+SSE : I want to watch Uproar in the Studio at the nearest cinema
+SSE : When can I see The Crew of the Dora
+SSE : List the movie times for recent movies in the area.
+SSE : Is Proudly She Marches playing anywhere?
+SSE : I need to know what theatre is playing A Happy Coersion
+SSE : Can I see Blood Orgy of the Leather Girls at a movie house.
+SSE : Show me movie times
+SSE : Give me the schedule now at the nearest movie house
+SSE : Is The Skull playing at Loews Cineplex
+SSE : Find the schedule for 102 Years in the Heart of Europe: A Portrait of Ernst Jünger at a movie theatre.
+SSE : Find animated movies playing in the area.
+SSE : I need a movie schedule for animated movies nearby
+SSE : Find the schedule for Grand Canyon Trail.
+SSE : show me the movies in Pacific Theatres
+SSE : Whens the next showing of The Game of Their Lives
+SSE : Give me the list of films at Santikos Theatres
+SSE : Fine the movie schedule.
+SSE : I want to see when Box Head Revolution is playing at the nearest movie theatre
+SSE : What films are playing at the nearest movie theatre
+SSE : Find the schedule for The Tooth Will Out at sunrise.
+SSE : Find the schedule for animated movie in the neighborhood at 02:06:29 am.
+SSE : Find the movie schedule around here.
+SSE : What is the movie schedule
+SSE : Is Jappeloup showing at Bow Tie Cinemas
+SSE : What's the movie schedule for B&B Theatres?
+SSE : Show me the schedule in the nearest movie theatre for Invasion U.S.A..
+SSE : show me the movie schedule in the area at seven AM for animated movies
+SSE : Give me movie times for Regal Entertainment Group
+SSE : Please check which movies will be available at eleven A.M. at Santikos Theatres?
+SSE : Where can I see Getting There: Sweet 16 and Licensed to Drive
+SSE : Find the schedule for The Kentuckians.
+SSE : Find the movie times.
+SSE : show me the schedule of movie theatre at closest for Vampire Hunter D: Bloodlust
+SSE : show me the films playing in the neighbourhood
+SSE : show me the schedule for The Duchess of Langeais at my cinema
+SSE : Is Love and Other Troubles playing
+SSE : Is The Legend of the Evil Lake playing at 09:38:42 am
+SSE : Is it possible to see The Italian Job at Malco Theatres
+SSE : Find movie schedules for Bow Tie Cinemas.
+SSE : Is it possible to see The Day of the Jackal at Pacific Theatres
+SSE : What times will The Garden of sinners Film 1 – Thanatos be playing?
+SSE : What movies are playing at the closest movie theatre
+SSE : Is Outlaw of Gor showing at thenearest movie house at 5 A.M.
+SSE : Kingsman: The Secret Service at my movie theatre
+SSE : What is the movie schedule for the Pacific Theatres
+SSE : Find the schedule for Project Shadowchaser II at the cinema in eighteen hours.
+SSE : Show me a theater close by with 2 p.m. or later movie times that plays recent movies
+SSE : Find the schedule for The Wild Eye.
+SSE : Please look for The Pagans at movie house.
+SSE : When will The Flower and the Angry Waves be showing?
+SSE : I want to see The Band of Honest Men at the nearest movie theatre.
+SSE : What is playing  at the closest movie house
+SSE : show me the movies playing around here
+SSE : When is Four Days in November playing at the movie house?
+SSE : Can I get the newest movie schedule
+SSE : what's the nearest movie theatre showing Concussion in one hour 
+SSE : What movies are playing at the closest cinema
+SSE : I want to see showings for The Voice of Merrill at my cinema.
+SSE : I want to see a list of the closest cinema's movies
+SSE : What Are the showings for The Natural History of Parking Lots movie house
+SSE : Give me the schedule for Public Stenographer at MJR Theatres
+SSE : Is it possible to see Tube at the closest movie theatre.
+SSE : I want to see Wenn Lucy springt now at a movie theatre.
+SSE : Is Across the Line playing at the closest movie house
+SSE : Which animated movies are playing in the neighbourhood ?
+SSE : Where is They Always Return at Dawn playing
+SSE : What is the movie schedule in the neighborhood
+SSE : Tell me when Howling II: Your Sister Is a Werewolf is playing.
