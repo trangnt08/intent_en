@@ -178,12 +178,11 @@ if __name__ == '__main__':
 
     print "Data dimensions:", train.shape
     print "List features:", train.columns.values
-    print "First review:", train["label1"][0], "|", train["question"][0]
+    print "First review:", train["label1"][392], "|", train["question"][392]
 
     print "Data dimensions:", test.shape
     print "List features:", test.columns.values
     print "First review:", test["label1"][0], "|", test["question"][0]
-    # train, test = train_test_split(train, test_size=0.2)
 
     train_text = train["question"].values
     test_text = test["question"].values

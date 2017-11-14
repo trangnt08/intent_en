@@ -153,8 +153,7 @@ def build_sentence(input_arr):
     return " ".join(chuoi)
 
 def load_data(filename, dict):
-    res = []
-    col1 = []; col2 = []; col3 = []; col4 = []
+    col1 = []; col2 = []
 
     with open(filename, 'r') as f,open(dict, "w") as f2:
         for line in f:
@@ -163,9 +162,9 @@ def load_data(filename, dict):
                 # question = clean_str_vn(question)
                 # question = review_to_words(question,'datavn/vietnamese-stopwords-dash.txt')
                 col1.append(label1)
-                col3.append(question)
+                col2.append(question)
 
-        ngram = ngrams_array(col3,2)
+        ngram = ngrams_array(col2,2)
         dict_arr = []
         for x in ngram:
             p = ngram.get(x)
@@ -173,22 +172,58 @@ def load_data(filename, dict):
             if p<1:
                 dict_arr.append(x)
                 f2.write(x+"\n")
-        col4 = []
-        for q in col3:
+        col3 = []
+        for q in col2:
             q = review_to_words2(q,dict,2)  # q la 1 cau
             q1 = [' '.join(x) for x in ngrams(q, 1)]  # q1:mang cac 1-grams
             q2 = [' '.join(x) for x in ngrams(q, 2)]  # q2: mang cac phan tu 2-grams
             q3 = [' '.join(x.replace(' ', '_') for x in q2)]
             y = q1 + q3
             z = " ".join(y)
-            col4.append(z)
-            # col4.append(q)
-        d = {"label1":col1, "question": col4}
+            col3.append(z)
+        d = {"label1":col1, "question": col3}
         train = pd.DataFrame(d)
     return train
 
+def training():
+    vectorizer = TfidfVectorizer(ngram_range=(1, 1), max_df=0.7, min_df=2, max_features=1000)
+    train = load_data('general_data/train.txt', 'dict_data/dict1')
+    train_text = train["question"].values
+    vectorizer.fit(train_text)
+    X_train = vectorizer.transform(train_text)
+    X_train = X_train.toarray()
+    y_train = train["label1"]
+    joblib.dump(vectorizer, 'model/vectorizer.pkl')
+    fit1(X_train, y_train)
 
-if __name__ == '__main__':
+def fit1(X_train,y_train):
+    uni_big = SVC(kernel='rbf', C=1000)
+    uni_big.fit(X_train, y_train)
+    joblib.dump(uni_big, 'model/uni_big.pkl')
+
+def predict_ex(mes):
+    uni_big = load_model('model/uni_big.pkl')
+    if uni_big == None:
+        training()
+    vectorizer = load_model('model/vectorizer.pkl')
+    uni_big = load_model('model/uni_big.pkl')
+    print "---------------------------"
+    print "Training"
+    print "---------------------------"
+
+    # test_message = list_words(test_message) # lam thanh chu thuong
+    clean_test_reviews = []
+    clean_test_reviews.append(mes)
+    d2 = {"message": clean_test_reviews}
+    test = pd.DataFrame(d2)
+    test_text = test["message"].values.astype('str')
+    test_data_features = vectorizer.transform(test_text)
+    test_data_features = test_data_features.toarray()
+    # print test_data_features
+    s = uni_big.predict(test_data_features)[0]
+    return s
+
+def train_main():
     vectorizer = TfidfVectorizer(ngram_range=(1, 1), max_df=0.7, min_df=2, max_features=1000)
     train = load_data('general_data/train.txt', 'dict_data/dict1')
     test = load_data('general_data/test.txt', 'dict_data/dict2')
@@ -216,6 +251,7 @@ if __name__ == '__main__':
     X_test = X_test.toarray()
     y_test = test["label1"]
 
+
     print "---------------------------"
     print "Training"
     print "---------------------------"
@@ -230,4 +266,14 @@ if __name__ == '__main__':
 
     print " accuracy: %0.3f" % accuracy_score(y_test, y_pred)
     print " %s - Converting completed %s" % (datetime.datetime.now(), time_diff_str(t0, time.time()))
-    print "confuse matrix: \n", confusion_matrix(y_test, y_pred, labels=["ATP", "BR", "WEATHER", "PM", "RB", "SCW", "SSE"])
+    print "confuse matrix: \n", confusion_matrix(y_test, y_pred,
+                                                 labels=["ATP", "BR", "WEATHER", "PM", "RB", "SCW", "SSE"])
+
+
+if __name__ == '__main__':
+    # train_main()
+
+    mes = raw_input("Nhap 1 cau: ")
+    kq = predict_ex(mes)
+    print kq
+

@@ -10709,7 +10709,7 @@ SCW : play Another Time
 SCW : Please search A New Machine TV series.
 SCW : Look for the Chu Chu and the Philly Flash picture
 SCW : show me the Everybody Wants You picture
-SCW : play Disney Sing It! – High School Musical 3: Senior Year
+SCW : play Disney Sing It! - High School Musical 3: Senior Year
 SCW : Can I hear the song American High.
 SCW : I need Chapter One of the show, get it for me please.
 SCW : I'm looking for a game called Gateway

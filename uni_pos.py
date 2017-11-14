@@ -1,18 +1,17 @@
 # -*- encoding: utf8 -*-
 import re
-from pyvi.pyvi import ViTokenizer, ViPosTagger
+
 from sklearn.externals import joblib
 from sklearn.metrics import accuracy_score
 import datetime
 import pandas as pd
 import time
 import os
-import numpy as np
 import nltk
+import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.svm import SVC
 from sklearn.metrics import confusion_matrix
-
 
 def time_diff_str(t1, t2):
     """
@@ -61,61 +60,19 @@ def review_to_words(review, filename):
     :return: meaningful_words
     """
     # 1. Convert to lower case, split into individual words
-    # words = review.lower().split()
-    tup = ViPosTagger.postagging(ViTokenizer.tokenize(unicode(review, encoding='utf-8')))  # gan nhan POS
-    words = review.split()
-    # 2. In Python, searching a set is much faster than searching
-    #   a list, so convert the stop words to a set
+    words = review.lower().split()
     with open(filename, "r") as f3:
         dict_data = f3.read()
         array = dict_data.splitlines()
-    # 3. Remove stop words
     meaningful_words = [w for w in words if not w in array]
-
-    # 4. Join the words back into one string separated by space,
-    # and return the result.
     return " ".join(meaningful_words)
-def review_add_pos(review, filename):
-    words = review.split()
-    with open(filename, "r") as f3:
-        dict_data = f3.read()
-        array = dict_data.splitlines()
 
-    meaningful_words = [w for w in words if not w in array]
-    b = " ".join(meaningful_words)  # cau sau khi loai bo stopword
-    words_list = b.split()
-    tup = ViPosTagger.postagging(ViTokenizer.tokenize(unicode(b,encoding='utf-8')))   # gan nhan POS
-    a = tup[1]
-    c = words_list + a
-    return " ".join(c)
-
-
-def review_to_words2(review, filename,n):
-    with open(filename, "r") as f3:
-        dict_data = f3.read()
-        array = dict_data.splitlines()
-    words = [' '.join(x) for x in ngrams(review, n)]
-    meaningful_words = [w for w in words if not w in array]
-    return build_sentence(meaningful_words)
 
 def word_clean(array, review):
     words = review.lower().split()
     meaningful_words = [w for w in words if w in array]
     return " ".join(meaningful_words)
 
-def print_words_frequency(train_data_features):
-    # Take a look at the words in the vocabulary
-    vocab = vectorizer.get_feature_names()
-    print "Words in vocabulary:", vocab
-
-    # Sum up the counts of each vocabulary word
-    dist = np.sum(train_data_features, axis=0)
-
-    # For each, print the vocabulary word and the number of times it
-    # appears in the training set
-    print "Words frequency..."
-    for tag, count in zip(vocab, dist):
-        print count, tag
 
 def ngrams(input, n):
   input = input.split(' ')
@@ -144,35 +101,11 @@ def ngrams_array(arr,n):
     return output
 
 
-def buid_dict(filename,arr,n,m):
-    with open(filename, 'r') as f:
-        ngram = ngrams_array(arr, n)
-        for x in ngram:
-            p = ngram.get(x)
-            if p < m:
-                f.write(x)
 
-def build_sentence(input_arr):
-    d = {}
-    for x in range(len(input_arr)):
-        d.setdefault(input_arr[x], x)
-    chuoi = []
-    for i in input_arr:
-        x = d.get(i)
-        if x == 0:
-            chuoi.append(i)
-        for j in input_arr:
-            y = d.get(j)
-            if y == x + 1:
-                z = j.split(' ')
-                chuoi.append(z[1])
-    print " ".join(chuoi)
-    return " ".join(chuoi)
-
-def load_data(filename, dict):
+def load_data(filename):
     col1 = []; col2 = []
 
-    with open(filename, 'r') as f,open(dict, "w") as f2:
+    with open(filename, 'r') as f:
         for line in f:
             if line != "\n":
                 label1, p, question = line.split(" ", 2)
@@ -188,57 +121,75 @@ def load_data(filename, dict):
             text = nltk.word_tokenize(q)    # q la 1 cau, text: list da tach tu trong cau
             a = nltk.pos_tag(text)  # a: [('They', 'PRP'), ('refuse', 'VBP'), ('to', 'TO')]
             for tup in a[:len(a)-1]:
-                t = tup[0] + "_" + tup[1]   # t = They_PRP
+                k = tup[0]
+                k = unicode(k, errors='replace')
+                t = k + "_" + tup[1] # t = They_PRP
                 r = r + t + " "
-            r = r + a[len(a)-1][0] + "_" + a[len(a)-1][1]
+            k0 = a[len(a)-1][0]
+            k0 = unicode(k0, errors='replace')
+            r = r + k0 + "_" + a[len(a)-1][1]
             col3.append(r)
+
+        print col2[1]
+        print col3[1]
+        if col2[1] == col3[1]:
+            print 1
+        else:
+            print 0
         d = {"label1":col1, "question": col3}
         train = pd.DataFrame(d)
     return train
 
+if __name__ == '__main__':
+    vectorizer = TfidfVectorizer(ngram_range=(1, 1), max_df=0.7, min_df=2, max_features=1000)
 
-if __name__ == "__main__":
-    # vectorizer = load_model('model/vectorizer2.pkl')
-    # if vectorizer == None:
-    vectorizer = TfidfVectorizer(ngram_range=(1,1), max_df=0.7, min_df=2, max_features=1000)
-    train = load_data('general_data/train.txt','dict_data/dict1')
-    test = load_data('general_data/test.txt','dict_data/dict2')
+
+    # d = load_data2('general_data/train.txt')
+    # d1 = d.get("label1")
+    # d2 = d.get("question")
+    # vectorizer.fit("Show me the saga The Buffalo Boy")
+    # x = vectorizer.transform("Show me the saga The Buffalo Boy")
+    # for i, j in zip(d1,d2):
+    #     print j
+    #     vectorizer.fit(j)
+    #     X = vectorizer.transform(j)
+
+
+    train = load_data('general_data/train.txt')
+    test = load_data('general_data/test.txt')
 
     print "Data dimensions:", train.shape
     print "List features:", train.columns.values
-    print "First review:", train["label1"][0], "|", train["question"][0]
+    print "First review:", train["label1"][392], "|", train["question"][392]
 
     print "Data dimensions:", test.shape
     print "List features:", test.columns.values
     print "First review:", test["label1"][0], "|", test["question"][0]
-    # train, test = train_test_split(train, test_size=0.2)
 
     train_text = train["question"].values
     test_text = test["question"].values
-
     vectorizer.fit(train_text)
     X_train = vectorizer.transform(train_text)
     X_train = X_train.toarray()
     y_train = train["label1"]
 
+
     X_test = vectorizer.transform(test_text)
     X_test = X_test.toarray()
     y_test = test["label1"]
 
-    # joblib.dump(vectorizer, 'model/vectorizer2.pkl')
     print "---------------------------"
     print "Training"
     print "---------------------------"
     names = ["RBF SVC"]
     t0 = time.time()
     # iterate over classifiers
-    # clf = load_model('model/uni_big2.pkl')
+
     clf = SVC(kernel='rbf', C=1000)
     clf.fit(X_train, y_train)
-    # joblib.dump(clf, 'model/uni_big2.pkl')
     y_pred = clf.predict(X_test)
-    print y_pred
+    # print y_pred
 
-    print " accuracy: %0.3f" % accuracy_score(y_test,y_pred)
+    print " accuracy: %0.3f" % accuracy_score(y_test, y_pred)
     print " %s - Converting completed %s" % (datetime.datetime.now(), time_diff_str(t0, time.time()))
     print "confuse matrix: \n", confusion_matrix(y_test, y_pred, labels=["ATP", "BR", "WEATHER", "PM", "RB", "SCW", "SSE"])
